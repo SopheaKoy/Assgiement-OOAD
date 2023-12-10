@@ -1,0 +1,11 @@
+C:\Users\Panha\Desktop\Student-Management.exe
+C:\Users\Panha\Desktop\Student-Management.dll
+C:\Users\Panha\Desktop\Student-Management.deps.json
+C:\Users\Panha\Desktop\Student-Management.runtimeconfig.json
+C:\Users\Panha\Desktop\Student-Management.pdb
+C:\Users\Panha\Desktop\System.Data.SqlClient.dll
+C:\Users\Panha\Desktop\runtimes\win-arm64\native\sni.dll
+C:\Users\Panha\Desktop\runtimes\win-x64\native\sni.dll
+C:\Users\Panha\Desktop\runtimes\win-x86\native\sni.dll
+C:\Users\Panha\Desktop\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Panha\Desktop\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

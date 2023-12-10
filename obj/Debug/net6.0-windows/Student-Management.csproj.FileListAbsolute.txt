@@ -1,0 +1,98 @@
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.exe
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.deps.json
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.runtimeconfig.json
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.pdb
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.csproj.GenerateResource.cache
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.AssemblyInfoInputs.cache
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.AssemblyInfo.cs
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.csproj.CoreCompileInputs.cache
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\refint\Student-Management.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.pdb
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.genruntimeconfig.cache
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\ref\Student-Management.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Login.resources
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Dashboard.resources
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Properties.Resources.resources
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Student.resources
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Search.resources
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.csproj.AssemblyReference.cache
+D:\IT-Year 4 24Gen\OOAP and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.csproj.CopyComplete
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.csproj.AssemblyReference.cache
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Dashboard.resources
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Login.resources
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Properties.Resources.resources
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Search.resources
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Statistic.resources
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student_Management.Student.resources
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.csproj.GenerateResource.cache
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.AssemblyInfoInputs.cache
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.AssemblyInfo.cs
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.csproj.CoreCompileInputs.cache
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.exe
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.deps.json
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.runtimeconfig.json
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\Student-Management.pdb
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\WinForms.DataVisualization.Utilities.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\WinForms.DataVisualization.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.csproj.CopyComplete
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\refint\Student-Management.dll
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.pdb
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\Student-Management.genruntimeconfig.cache
+D:\IT-Year 4 24Gen\OOAD and Prog\Project OOAD\Student-Management\obj\Debug\net6.0-windows\ref\Student-Management.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.csproj.AssemblyReference.cache
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student_Management.Dashboard.resources
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student_Management.Login.resources
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student_Management.Properties.Resources.resources
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student_Management.Search.resources
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student_Management.Statistic.resources
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student_Management.Student.resources
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.csproj.GenerateResource.cache
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.AssemblyInfoInputs.cache
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.AssemblyInfo.cs
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.csproj.CoreCompileInputs.cache
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\refint\Student-Management.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.pdb
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\Student-Management.exe
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\Student-Management.deps.json
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\Student-Management.runtimeconfig.json
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\Student-Management.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\Student-Management.pdb
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\WinForms.DataVisualization.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.csproj.CopyComplete
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\Student-Management.genruntimeconfig.cache
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows\ref\Student-Management.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\ClosedXML.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\ExcelNumberFormat.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\Irony.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\SixLabors.Fonts.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\XLParser.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows\itextsharp.dll
