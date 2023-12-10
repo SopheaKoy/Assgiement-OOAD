@@ -113,6 +113,17 @@ namespace Student_Management
             }
         }
 
+
+        private void FilterByHGender(string gender)
+        {
+            DataView dataView = new DataView(dataTable);
+            dataView.RowFilter = $"Gender = '{gender}'";
+
+            dvg1.DataSource = dataView;
+        }
+
+
+
         //Search btn
         private void button3_Click(object sender, EventArgs e)
         {
@@ -121,8 +132,17 @@ namespace Student_Management
                 // Get the search term from the TextBox
                 string searchTerm = txtSearch.Text.Trim();
 
-                // Call a method to perform the search based on the term
-                SearchData(searchTerm);
+                if (searchTerm == null || searchTerm == "")
+                {
+                    MessageBox.Show("Please enter a search term.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    SearchData(searchTerm);
+
+
+
+                }
             }
             catch (Exception ex)
             {
@@ -138,23 +158,37 @@ namespace Student_Management
                 {
                     dataTable.DefaultView.RowFilter = "";
 
-                    // Check if the search term is numeric
-                    if (int.TryParse(searchTerm, out _))
+                    try
                     {
-                        string filterExpression = $"stu_id = {searchTerm} OR " +
-                                                  $"stu_name LIKE '%{searchTerm}%' OR " +
-                                                  $"stu_gender LIKE '%{searchTerm}%' OR " +
-                                                  $"stu_province LIKE '%{searchTerm}%'";
-                        dataTable.DefaultView.RowFilter = filterExpression;
+                        // Check if the search term is numeric
+                        if (int.TryParse(searchTerm, out _))
+                        {
+                            string filterExpression = $"stu_id = {searchTerm} OR " +
+                                                      $"stu_name LIKE '%{searchTerm}%' OR " +
+                                                      $"stu_gender LIKE '%{searchTerm}%' OR " +
+                                                      $"stu_province LIKE '%{searchTerm}%'";
+                            dataTable.DefaultView.RowFilter = filterExpression;
+
+
+                        }
+                        else
+                        {
+                            // For non-numeric search terms, use LIKE
+                            string filterExpression = $"stu_name LIKE '%{searchTerm}%' OR " +
+                                                      $"stu_gender LIKE '%{searchTerm}%' OR " +
+                                                      $"stu_province LIKE '%{searchTerm}%'";
+                            dataTable.DefaultView.RowFilter = filterExpression;
+
+                        }
+
+                        MessageBox.Show("Data don't have in DataBase !!!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        // For non-numeric search terms, use LIKE
-                        string filterExpression = $"stu_name LIKE '%{searchTerm}%' OR " +
-                                                  $"stu_gender LIKE '%{searchTerm}%' OR " +
-                                                  $"stu_province LIKE '%{searchTerm}%'";
-                        dataTable.DefaultView.RowFilter = filterExpression;
+                        MessageBox.Show($"Data don't have in DataBase !!!: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+
 
                     // Refresh the DataGridView to reflect the changes
                     dvg1.Refresh();

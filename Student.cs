@@ -1,5 +1,7 @@
-﻿using System.Data;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace Student_Management
 {
@@ -65,7 +67,7 @@ namespace Student_Management
         {
 
         }
-
+        // Finsih on Add button
         private void btnAdd_Click(object sender, EventArgs e)
         {
             try
@@ -75,7 +77,7 @@ namespace Student_Management
                     connection.Open();
 
                     // Retrieve the current maximum stu_id
-                    string getMaxIdQuery = "SELECT MAX(stu_id) FROM students";
+                    string getMaxIdQuery = "SELECT MAX(ID) FROM students";
 
                     using (SqlCommand getMaxIdCmd = new SqlCommand(getMaxIdQuery, connection))
                     {
@@ -89,20 +91,25 @@ namespace Student_Management
                         // Show the newStuId on txt_stuid
                         txt_stuid.Text = newStuId.ToString();
 
-                        string query = "INSERT INTO students (stu_id, stu_name, stu_gender, stu_phone, stu_province, stu_dob) " +
-                                        "VALUES (@stu_id, @stu_name, @stu_gender, @stu_phone, @stu_province, @stu_dob)";
+
+
+                        string query = "INSERT INTO students (ID, Name, Gender, Phone, Province, Subject, DOB, CreatedAt, Status) " +
+               "VALUES (@ID, @Name, @Gender, @Phone, @Province, @Subject, @DOB, GETDATE(), @Status)";
 
                         using (SqlCommand cmd = new SqlCommand(query, connection))
                         {
-                            cmd.Parameters.AddWithValue("@stu_id", txt_stuid.Text);
-                            cmd.Parameters.AddWithValue("@stu_name", txt_stuname.Text);
-                            cmd.Parameters.AddWithValue("@stu_gender", gender);
-                            cmd.Parameters.AddWithValue("@stu_phone", txt_stuphone.Text);
-                            cmd.Parameters.AddWithValue("@stu_province", txt_stupro.Text);
-                            cmd.Parameters.AddWithValue("@stu_dob", date_dob.Value);
+                            cmd.Parameters.AddWithValue("@ID", newStuId);
+                            cmd.Parameters.AddWithValue("@Name", txt_stuname.Text);
+                            cmd.Parameters.AddWithValue("@Gender", gender); // Assuming 'gender' is already defined
+                            cmd.Parameters.AddWithValue("@Phone", txt_stuphone.Text);
+                            cmd.Parameters.AddWithValue("@Province", txt_stupro.Text);
+                            cmd.Parameters.AddWithValue("@Subject", txt_subject.Text);
+                            cmd.Parameters.AddWithValue("@DOB", date_dob.Value);
+                            cmd.Parameters.AddWithValue("@Status", "True");
 
                             cmd.ExecuteNonQuery();
                         }
+
                     }
                 }
 
@@ -110,6 +117,7 @@ namespace Student_Management
                 txt_stuname.Clear();
                 txt_stupro.Clear();
                 txt_stuphone.Clear();
+                txt_subject.Clear();
                 date_dob.Value = System.DateTime.Now;
                 errorProvider.Clear();
                 LaodData();
@@ -125,7 +133,7 @@ namespace Student_Management
         }
 
 
-
+        // Button update 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -133,43 +141,58 @@ namespace Student_Management
                 using (SqlConnection connection = new SqlConnection(connectionSql))
                 {
                     connection.Open();
-                    string query = "UPDATE students SET stu_name = @stu_name, stu_gender = @stu_gender, stu_phone = @stu_phone, stu_province = @stu_province, stu_dob = @stu_dob WHERE stu_id = @stu_id";
+
+                    string query = "UPDATE students " +
+                                   "SET Name = @Name, " +
+                                   "    Gender = @Gender, " +
+                                   "    Phone = @Phone, " +
+                                   "    Province = @Province, " +
+                                   "    Subject = @Subject, " +
+                                   "    DOB = @DOB " +
+                                   "WHERE ID = @ID";
 
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
                         int selectedIndex = dataGrid.CurrentCell.RowIndex;
-                        string stuName = dataGrid["stu_name", selectedIndex].Value.ToString();
-                        string stuGender = dataGrid["stu_gender", selectedIndex].Value.ToString();
-                        string stuPhone = dataGrid["stu_phone", selectedIndex].Value.ToString();
-                        string stuProvince = dataGrid["stu_province", selectedIndex].Value.ToString();
-                        int stuId = Convert.ToInt32(dataGrid["stu_id", selectedIndex].Value);
-                        DateTime stuDob = Convert.ToDateTime(dataGrid["stu_dob", selectedIndex].Value);
 
-                        cmd.Parameters.AddWithValue("@stu_id", txt_stuid.Text);
-                        cmd.Parameters.AddWithValue("@stu_name", txt_stuname.Text);
-                        cmd.Parameters.AddWithValue("@stu_gender", gender);
-                        cmd.Parameters.AddWithValue("@stu_phone", txt_stuphone.Text);
-                        cmd.Parameters.AddWithValue("@stu_province", txt_stupro.Text);
-                        cmd.Parameters.AddWithValue("@stu_dob", date_dob.Value);
+                        // Use the null-conditional operator ?. to prevent null reference exceptions
+                        string stuName = dataGrid["Name", selectedIndex].Value?.ToString();
+                        string stuGender = dataGrid["Gender", selectedIndex].Value?.ToString();
+                        string stuPhone = dataGrid["Phone", selectedIndex].Value?.ToString();
+                        string stuProvince = dataGrid["Province", selectedIndex].Value?.ToString();
+                        string stuSubject = dataGrid["Subject", selectedIndex].Value?.ToString();
+                        int stuId = Convert.ToInt32(dataGrid["ID", selectedIndex].Value);
+                        DateTime stuDob = Convert.ToDateTime(dataGrid["DOB", selectedIndex].Value);
 
-                        cmd.ExecuteNonQuery();
-                        // auto load
-                        txt_stuid.Clear();
-                        txt_stuname.Clear();
-                        txt_stupro.Clear();
-                        txt_stuphone.Clear();
-                        date_dob.Value = System.DateTime.Now;
+                        // Clear any previous error indications
                         errorProvider.Clear();
-                        LaodData();
 
-                        // Add parameters for other fields (stu_phone, stu_province, stu_dob) as needed
+                        // Set parameters for the update
+                        cmd.Parameters.AddWithValue("@ID", stuId);
+                        cmd.Parameters.AddWithValue("@Name", txt_stuname.Text);
+                        cmd.Parameters.AddWithValue("@Gender", gender);
+                        cmd.Parameters.AddWithValue("@Phone", txt_stuphone.Text); // Corrected line
+                        cmd.Parameters.AddWithValue("@Province", txt_stupro.Text);
+                        cmd.Parameters.AddWithValue("@Subject", txt_subject.Text);
+                        cmd.Parameters.AddWithValue("@DOB", date_dob.Value);
+
+                        // Debug statement to check the number of rows affected
+                        cmd.ExecuteNonQuery();
+                       
+                        errorProvider.Clear();
+
+                        // Reload data into the DataGridView
+                        LaodData(); // Assuming 'LaodData' is a method to reload data into the DataGridView
                     }
                 }
+
+
+
                 MessageBox.Show("Student updated successfully!", "Success update", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred : {ex.Message}", "Error update", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error update", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -180,12 +203,12 @@ namespace Student_Management
 
         private void radio_male_CheckedChanged(object sender, EventArgs e)
         {
-            gender = "male";
+            gender = "Male";
         }
 
         private void radio_female_CheckedChanged(object sender, EventArgs e)
         {
-            gender = "female";
+            gender = "Female";
         }
 
         private void dataGrid_CellContentClick(object sender, DataGridViewCellEventArgs? e)
@@ -233,10 +256,11 @@ namespace Student_Management
             {
                 DataGridViewRow row = this.dataGrid.Rows[e.RowIndex];
 
-                txt_stuid.Text = row.Cells["stu_id"].Value.ToString();
-                txt_stuname.Text = row.Cells["stu_name"].Value.ToString();
-                txt_stupro.Text = row.Cells["stu_province"].Value.ToString();
-                txt_stuphone.Text = row.Cells["stu_phone"].Value.ToString();
+                txt_stuid.Text = row.Cells["ID"].Value.ToString();
+                txt_stuname.Text = row.Cells["Name"].Value.ToString();
+                txt_stupro.Text = row.Cells["Province"].Value.ToString();
+                txt_stuphone.Text = row.Cells["Phone"].Value.ToString();
+                txt_subject.Text = row.Cells["Subject"].Value.ToString();
             }
         }
 
@@ -245,11 +269,24 @@ namespace Student_Management
             if (e.KeyChar == (char)Keys.Enter)
             {
                 // Move to the next control in the tab order
-                this.SelectNextControl((Control)sender, true, true, true, true);
+                this.SelectNextControl((System.Windows.Forms.Control)sender, true, true, true, true);
             }
         }
 
         private void Student_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_clean_Click(object sender, EventArgs e)
+        {
+            txt_stuid.Clear();
+            txt_stuname.Clear();
+            txt_stupro.Clear();
+            txt_stuphone.Clear();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

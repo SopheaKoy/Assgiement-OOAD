@@ -88,11 +88,11 @@
             label3.BackColor = Color.FromArgb(0, 129, 220);
             label3.Font = new Font("Poppins SemiBold", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(108, 21);
+            label3.Location = new Point(97, 23);
             label3.Name = "label3";
-            label3.Size = new Size(296, 62);
+            label3.Size = new Size(312, 62);
             label3.TabIndex = 4;
-            label3.Text = "L O G I N F O R M";
+            label3.Text = "L O G I N   F O R M";
             // 
             // btn_login
             // 

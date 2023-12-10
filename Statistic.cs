@@ -37,7 +37,7 @@ namespace Student_Management
             {
                 connection.Open();
 
-                string query = "SELECT stu_gender, COUNT(*) AS RecordCount FROM students GROUP BY stu_gender";
+                string query = "SELECT Gender, COUNT(*) AS RecordCount FROM students GROUP BY Gender";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                 DataTable dataTable = new DataTable();
@@ -45,7 +45,7 @@ namespace Student_Management
 
                 chart.DataSource = dataTable;
 
-                chart.Series["Series1"].Points.DataBindXY(dataTable.Rows, "stu_gender", dataTable.Rows, "RecordCount");
+                chart.Series["Series1"].Points.DataBindXY(dataTable.Rows, "Gender", dataTable.Rows, "RecordCount");
 
                 //chart.Series["Series1"].IsValueShownAsLabel = true;
             }
@@ -103,7 +103,7 @@ namespace Student_Management
             {
                 connection.Open();
 
-                string query = "SELECT stu_id, stu_name, stu_gender, stu_phone, stu_province, stu_dob FROM students";
+                string query = "SELECT ID, Name, Gender, Phone, Province, DOB FROM students";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);

@@ -98,12 +98,12 @@
             // 
             dvg1.BackgroundColor = SystemColors.ButtonHighlight;
             dvg1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dvg1.Location = new Point(126, 84);
+            dvg1.Location = new Point(70, 86);
             dvg1.Margin = new Padding(3, 2, 3, 2);
             dvg1.Name = "dvg1";
             dvg1.RowHeadersWidth = 51;
             dvg1.RowTemplate.Height = 29;
-            dvg1.Size = new Size(749, 377);
+            dvg1.Size = new Size(865, 377);
             dvg1.TabIndex = 5;
             dvg1.CellContentClick += dvg1_CellContentClick;
             // 

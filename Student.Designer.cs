@@ -51,7 +51,10 @@ namespace Student_Management
             dataGridViewTextBoxEditingControlBindingSource = new BindingSource(components);
             dataGridViewComboBoxEditingControlBindingSource = new BindingSource(components);
             panel1 = new Panel();
+            btn_clean = new Button();
             label1 = new Label();
+            txt_subject = new TextBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewTextBoxEditingControlBindingSource).BeginInit();
@@ -223,7 +226,7 @@ namespace Student_Management
             date_dob.Location = new Point(740, 104);
             date_dob.Margin = new Padding(3, 2, 3, 2);
             date_dob.Name = "date_dob";
-            date_dob.Size = new Size(286, 29);
+            date_dob.Size = new Size(329, 29);
             date_dob.TabIndex = 19;
             date_dob.ValueChanged += date_dob_ValueChanged;
             // 
@@ -289,6 +292,9 @@ namespace Student_Management
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 129, 220);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(txt_subject);
+            panel1.Controls.Add(btn_clean);
             panel1.Controls.Add(btnBack);
             panel1.Controls.Add(btnUpdate);
             panel1.Controls.Add(label1);
@@ -302,6 +308,22 @@ namespace Student_Management
             panel1.Size = new Size(1103, 562);
             panel1.TabIndex = 36;
             // 
+            // btn_clean
+            // 
+            btn_clean.BackColor = SystemColors.Window;
+            btn_clean.FlatAppearance.BorderSize = 0;
+            btn_clean.FlatStyle = FlatStyle.Popup;
+            btn_clean.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_clean.ForeColor = Color.FromArgb(0, 129, 220);
+            btn_clean.Location = new Point(943, 45);
+            btn_clean.Margin = new Padding(9, 8, 9, 8);
+            btn_clean.Name = "btn_clean";
+            btn_clean.Size = new Size(126, 36);
+            btn_clean.TabIndex = 36;
+            btn_clean.Text = "CLEAR";
+            btn_clean.UseVisualStyleBackColor = false;
+            btn_clean.Click += btn_clean_Click;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -310,6 +332,28 @@ namespace Student_Management
             label1.Name = "label1";
             label1.Size = new Size(0, 34);
             label1.TabIndex = 13;
+            // 
+            // txt_subject
+            // 
+            txt_subject.Font = new Font("Poppins", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_subject.Location = new Point(243, 343);
+            txt_subject.Margin = new Padding(3, 2, 3, 2);
+            txt_subject.Name = "txt_subject";
+            txt_subject.Size = new Size(254, 36);
+            txt_subject.TabIndex = 37;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(0, 129, 220);
+            label2.Font = new Font("Inter Medium", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Transparent;
+            label2.Location = new Point(50, 351);
+            label2.Name = "label2";
+            label2.Size = new Size(98, 23);
+            label2.TabIndex = 37;
+            label2.Text = "Subject :";
+            label2.Click += label2_Click;
             // 
             // Student
             // 
@@ -377,5 +421,8 @@ namespace Student_Management
         private BindingSource dataGridViewComboBoxEditingControlBindingSource;
         private Panel panel1;
         private Label label1;
+        private Button btn_clean;
+        private TextBox txt_subject;
+        private Label label2;
     }
 }

@@ -36,3 +36,4 @@ C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows7.0\refint\Stude
 C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows7.0\Student-Management.pdb
 C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows7.0\Student-Management.genruntimeconfig.cache
 C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\obj\Debug\net6.0-windows7.0\ref\Student-Management.dll
+C:\Users\Dann\Desktop\Years 4\OOAD\OOAD\bin\Debug\net6.0-windows7.0\BouncyCastle.Crypto.dll
